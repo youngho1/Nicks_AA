@@ -120,8 +120,6 @@ def closet(item_bag):
 	else:
 		print "Wrong!"
 	
-	
-	
 def nightstand(item_bag):
 	'''The nightstand contains the key'''
 	items_and_actions = ['look', 'open', 'water', 'glass', 'closet', 'door'
@@ -146,7 +144,7 @@ def nightstand(item_bag):
 		print "\nThe draw slides open with such ease that it suprises you,"
 		print "the entire drawer comes flying out, and a key falls on the ground."
 		print "You pick it up because keys are shiny, and you are simple-minded."
-		item_bag_add(item_bag, items_and_actions[6], nightstand)	
+		item_bag_add(item_bag, 'key', nightstand)	
 	elif 'closet' in checkED_answer:
 		print "\nYou arrive at the closet. It may be locked"
 		print "What ya going to do about it?"
@@ -171,6 +169,8 @@ def door(item_bag):
 	else:
 		print "\nGo back and complete the first room punk!"
 		start_room(item_bag)
+		
+### Below are the non-environment functions used to check inputs ###
 	
 def check_answer(items_and_actions, answer):
 	'''IMPORTANT : Checks the answers against acceptable answers'''
@@ -208,8 +208,6 @@ def item_bag_inspect(item_bag, room):
 		print ''
 		print item
 	room(item_bag)
-
-
 
 
 	
