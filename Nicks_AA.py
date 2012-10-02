@@ -124,7 +124,7 @@ def closet(item_bag):
 	
 def nightstand(item_bag):
 	'''The nightstand contains the key'''
-	items_and_actions = ['look', 'open', 'water', 'glass', 'closet', 'door',
+	items_and_actions = ['look', 'open', 'water', 'glass', 'closet', 'door'
 	, 'items']
 	
 	# Ask for an answer
@@ -213,4 +213,4 @@ def item_bag_inspect(item_bag, room):
 
 
 	
-start(item_bag)		
+start(item_bag)
