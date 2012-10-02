@@ -78,7 +78,7 @@ def closet(item_bag):
 	'''The closet is locked and for good reason'''
 	# All the accepted answer to evoke responses
 	items_and_actions = ['look', 'handle', 'break', 'open', 'nightstand', 'door',
-	'pet dolphin', 'items']
+	'items']
 	
 	# Ask for an answer
 	answer = raw_input('> ').lower()
@@ -125,7 +125,7 @@ def closet(item_bag):
 def nightstand(item_bag):
 	'''The nightstand contains the key'''
 	items_and_actions = ['look', 'open', 'water', 'glass', 'closet', 'door',
-	'key', 'items']
+	, 'items']
 	
 	# Ask for an answer
 	answer = raw_input('> ').lower()
