@@ -99,7 +99,7 @@ def closet(item_bag):
 		print "\nYou cracked the code of the closed closet. A stuffed pet"
 		print "dolphin falls out so you do the only logical thing you can."
 		print "You shove it into your item bag without any questions."
-		item_bag_add(item_bag, items_and_actions[6], closet)
+		item_bag_add(item_bag, 'pet dolphin', closet)
 	elif ('open' in checkED_answer) or ('handle' in checkED_answer):
 		print "\nYou shake it once, you shake it twice, and now you"
 		print "are just playing with it. It's locked by the way."
